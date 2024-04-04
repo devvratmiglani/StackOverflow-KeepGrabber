@@ -16,7 +16,7 @@ Okay let's not `exploit` it, it is only for educational purposes!
 ```sh
 pip install bs4
 ```
-then
+then to run:
 ```sh
 python -u /path/to/KeepGrabbing.py
 ```
