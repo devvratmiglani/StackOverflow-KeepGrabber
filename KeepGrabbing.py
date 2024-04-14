@@ -60,13 +60,9 @@ for i in range(1,1000):
         tag4 = ""
         count_answer = "0"
 
-        question_text = re.sub(" +"," ",q.find('a',{"class":"s-link"}).text) # question text
-        question_text = re.sub("\n+"," ",question_text)
-        question_text = re.sub(" +"," ",question_text)
+        question_text = re.sub("\s+"," ",q.find('a',{"class":"s-link"}).text) # question text
 
-        question_markdown = re.sub(" +"," ",q.find('div',{"class":"s-post-summary--content-excerpt"}).text) # question markdown
-        question_markdown = re.sub("\n+"," ",question_markdown)
-        question_markdown = re.sub(" +"," ",question_markdown)
+        question_markdown = re.sub("\s+"," ",q.find('div',{"class":"s-post-summary--content-excerpt"}).text) # question markdown
 
         pt = q.findAll('a',{"class":"post-tag"}) # post tags
 
